@@ -135,12 +135,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
 
 
-  source_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "18.04-LTS"
-    version   = "latest"
-  }
+  source_image_id = "/subscriptions/fbf787c1-ed83-44ad-946e-6ff3b027c400/resourceGroups/Azuredevops/providers/Microsoft.Compute/images/myPackerImage"
 
 
   tags = {
